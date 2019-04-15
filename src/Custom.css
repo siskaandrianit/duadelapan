@@ -71,7 +71,12 @@
   .Biru.selected {
     background: #0065ff;
   }
- 
+  .Gray.is-active {
+    background: #7b7e84;
+  }
+  .Gray.selected {
+    background: #7b7e84;
+  }
   .info {
     margin-top: 40px;
     text-align: center;

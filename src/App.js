@@ -20,6 +20,33 @@ class App extends Component {
 		title:menu.title,
 		});
 	}
+	info(name){
+		if(name == 'Calculator')
+		{
+			
+			//display calc
+			return(
+			<div>
+				<span className={"selected"+this.state.color}>{this.state.title}
+				</span><br/><br/>
+				<input type ="number" placeholder="1"/>+
+				<input type ="number" placeholder="2"/>=
+				<span> ...</span><br/><br/>
+			<button> hitung </button>
+			</div>
+		);
+		}
+		else{
+			return(
+			
+		
+			<div>
+			Ini adalah <span className={"selected "+this.state.color}>{this.state.title}</span> <br/> <br/>
+			<img src={this.state.img} width="200"> 
+			</img>
+			</div>);
+		}
+	}
 	//menuSaya(){
 		//var gambar;
 		//if(this.state.active.toLowerCase() === 'merah'){
@@ -54,14 +81,14 @@ class App extends Component {
 			} ) }
 			</nav>
 			
-			<div className="info ">
 			
-			Ini adalah <span className={"selected "+this.state.color}>{this.state.title}</span> <br/> <br/>
-		<img src={this.state.img} width="200"> 
-		</img>
+			<div className="info ">
+			{this.info(this.state.title)}
+			
 			
 			
 			</div>
+			
 		</div>
 			
     );
