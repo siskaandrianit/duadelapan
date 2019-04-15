@@ -22,7 +22,8 @@ const items = [
 					img  :'biru.jpg',
 					title:'Ma-Biru',
 				},
-				{	color : 'ungu',
+				{	color : 'Cokelat',
+					image : 'calcu.png',
 					title:'Calculator',
 				},
 				];
