@@ -33,8 +33,7 @@ class App extends Component {
 				<input type ="number" placeholder="2"/>=
 				<span> ...</span><br/><br/>
 			<button> hitung </button>
-			</div>
-		);
+			</div>);
 		}
 		else{
 			return(
