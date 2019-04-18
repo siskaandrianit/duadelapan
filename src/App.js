@@ -10,6 +10,7 @@ class App extends Component {
 			color: 'Merah',
 			img:'merah2.jpg',
 			title:'Ma-Merah',
+			
 		};
 	}
 	
@@ -18,10 +19,12 @@ class App extends Component {
 		color:menu.color,
 		img:menu.img,
 		title:menu.title,
+		angka1:0,
+		angka2:0,
 		});
 	}
-	info(name){
-		if(name == 'Calculator')
+	info(title){
+		if(title == 'Calculator')
 		{
 			
 			//display calc
@@ -29,23 +32,45 @@ class App extends Component {
 			<div>
 				<span className={"selected"+this.state.color}>{this.state.title}
 				</span><br/><br/>
-				<input type ="number" placeholder="1"/>+
-				<input type ="number" placeholder="2"/>=
-				<span> ...</span><br/><br/>
-			<button> hitung </button>
-			</div>);
-		}
-		else{
+				<input type="number" name="angka1" placeholder="angka 1" value={this.state.angka1} onChange={this.changehand.bind(this)}/>
+				<select ref="operator" className="from-control">
+       <option value="+">+</option>
+       <option value="-">-</option>
+       <option value="*">*</option>
+       <option value="/">/</option>
+       </select>
+
+				   <input type="number" name="angka 2" placeholder="angka 2"  value={this.state.angka2} onChange={this.changehand.bind(this)} />=
+        			 <span>{this.state.angka1}</span><br/><br/>
+        			 
+					
+
+				
+			</div>
+			);
+		}else{
 			return(
 			
 		
 			<div>
-			Ini adalah <span className={"selected "+this.state.color}>{this.state.title}</span> <br/> <br/>
+			Ini adalah <span className={"selected "+this.state.color}>
+			{this.state.title}</span> <br/> <br/>
 			<img src={this.state.img} width="200"> 
 			</img>
-			</div>);
+			</div>
+			);
 		}
 	}
+	changehand(event){
+
+		this.setState({
+		angka1:event.target.value
+		});
+	}
+	
+		
+		
+	
 	//menuSaya(){
 		//var gambar;
 		//if(this.state.active.toLowerCase() === 'merah'){

@@ -24,6 +24,7 @@ const items = [
 				},
 				{	color : 'Gray',
 					title:'Calculator',
+					
 				},
 				];
 ReactDOM.render(<App items={items} />, document.getElementById('root'));
