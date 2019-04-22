@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/duadelapan/static/js/runtime~main.7eb5d352.js"
   },
   {
-    "revision": "a2cd5d606fc5b13c10aa",
-    "url": "/duadelapan/static/js/main.96d31068.chunk.js"
+    "revision": "1d6836091cb22ed5ae7b",
+    "url": "/duadelapan/static/js/main.3cfd0041.chunk.js"
   },
   {
     "revision": "ae16a87fb53cd116d879",
     "url": "/duadelapan/static/js/2.8cc61361.chunk.js"
   },
   {
-    "revision": "a2cd5d606fc5b13c10aa",
-    "url": "/duadelapan/static/css/main.fbd14c0e.chunk.css"
+    "revision": "1d6836091cb22ed5ae7b",
+    "url": "/duadelapan/static/css/main.93585872.chunk.css"
   },
   {
-    "revision": "f5cff3f2de479336280255502bf94bfa",
+    "revision": "7721923527d5e8b0f21aec3fe2d59633",
     "url": "/duadelapan/index.html"
   }
 ];
