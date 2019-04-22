@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Profile from './profile.js';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -10,6 +10,9 @@ class App extends Component {
 			color: 'Merah',
 			img:'merah2.jpg',
 			title:'Ma-Merah',
+			angka1:0,
+			angka2:0,
+			operation :'plus',
 			
 		};
 	}
@@ -19,10 +22,11 @@ class App extends Component {
 		color:menu.color,
 		img:menu.img,
 		title:menu.title,
-		angka1:0,
-		angka2:0,
+		
 		});
 	}
+	
+
 	info(title){
 		if(title == 'Calculator')
 		{
@@ -30,25 +34,32 @@ class App extends Component {
 			//display calc
 			return(
 			<div>
-				<span className={"selected"+this.state.color}>{this.state.title}
+				<span className={"selected "+this.state.color}>
+			{this.state.title}
 				</span><br/><br/>
 				<input type="number" name="angka1" placeholder="angka 1" value={this.state.angka1} onChange={this.changehand.bind(this)}/>
-				<select ref="operator" className="from-control">
-       <option value="+">+</option>
-       <option value="-">-</option>
-       <option value="*">*</option>
-       <option value="/">/</option>
-       </select>
+				<select name="operation" onChange={this.changehand.bind(this)}>
+				<option value="plus">+</option>
+				<option value="minus">-</option>
+				<option value="pow">*</option>
+				<option value="div">/</option>
+				</select>
 
-				   <input type="number" name="angka 2" placeholder="angka 2"  value={this.state.angka2} onChange={this.changehand.bind(this)} />=
-        			 <span>{this.state.angka1}</span><br/><br/>
+				   <input type="number" name="angka2" placeholder="angka 2"  value={this.state.angka2} onChange={this.changehand.bind(this)} />=
         			 
+					
+        			<span> {this.hitung()}</span>
 					
 
 				
 			</div>
 			);
-		}else{
+			
+		}
+		else if(title=='Profile'){
+			return <Profile/>;
+		}
+		else{
 			return(
 			
 		
@@ -64,9 +75,20 @@ class App extends Component {
 	changehand(event){
 
 		this.setState({
-		angka1:event.target.value
+			[event.target.name]:event.target.value,
+			
+		
 		});
 	}
+	hitung(){
+console.log(this.state.operation);
+	switch(this.state.operation){
+	case 'plus' :return parseInt(this.state.angka1) + parseInt(this.state.angka2);
+	case 'minus' :return parseInt(this.state.angka1) - parseInt(this.state.angka2);
+	case 'pow' :return parseInt(this.state.angka1) * parseInt(this.state.angka2);
+	case 'div':return parseInt(this.state.angka1) / parseInt(this.state.angka2);
+	}
+}
 	
 		
 		

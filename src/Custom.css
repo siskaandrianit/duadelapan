@@ -22,7 +22,7 @@
   }
  
   .nav {
-    width: 500px;
+  
     margin: 20px auto;
     max-width: 48em;
     border: 1px solid #333;
@@ -71,11 +71,17 @@
   .Biru.selected {
     background: #0065ff;
   }
-  .Gray.is-active {
-    background: #7b7e84;
+  .Jambu.is-active {
+    background: #FFC0CB;
   }
-  .Gray.selected {
-    background: #7b7e84;
+  .Jambu.selected {
+    background: #FFC0CB;
+  }
+  .Oranye.is-active {
+    background: #FF7F00;
+  }
+  .Oranye.selected {
+    background: #FF7F00;
   }
   .info {
     margin-top: 40px;

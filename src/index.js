@@ -22,8 +22,12 @@ const items = [
 					img  :'biru.jpg',
 					title:'Ma-Biru',
 				},
-				{	color : 'Gray',
+				{	color : 'Jambu',
 					title:'Calculator',
+					
+				},
+				{	color : 'Oranye',
+					title:'Profile',
 					
 				},
 				];
