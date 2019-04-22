@@ -83,6 +83,19 @@
   .Oranye.selected {
     background: #FF7F00;
   }
+  .Oranye.is-active {
+    background: #FF7F00;
+  }
+  .Oranye.selected {
+    background: #FF7F00;
+  }
+  .Tomat.is-active {
+    background: #FF6347	;
+  }
+  .Tomat.selected {
+    background: #FF6347	;
+  }
+
   .info {
     margin-top: 40px;
     text-align: center;

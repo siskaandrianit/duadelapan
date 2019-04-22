@@ -30,6 +30,10 @@ const items = [
 					title:'Profile',
 					
 				},
+				{
+					color: 'Tomat',
+					title: 'Calcu',
+				},
 				];
 ReactDOM.render(<App items={items} />, document.getElementById('root'));
 

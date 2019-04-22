@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Profile from './profile.js';
+import Calcu from './Calcu.js';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -58,6 +59,9 @@ class App extends Component {
 		}
 		else if(title=='Profile'){
 			return <Profile/>;
+		}
+		else if(title=='Calcu'){
+			return <Calcu/>;
 		}
 		else{
 			return(
