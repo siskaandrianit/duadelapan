@@ -9,8 +9,8 @@ class Profile extends Component {
   render() {
     return (
 	<div>
-    <p>{this.props.nama}</p>
-	<img src="biru1.jpg" width="200"/>
+    <h1>{this.props.nama}</h1>
+	<img src="pp.jpg" width="400"/>
 			</div>
     );
   }

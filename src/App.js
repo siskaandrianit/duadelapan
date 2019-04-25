@@ -32,7 +32,7 @@ class App extends Component {
 	
 		}
 		else if(title=='Profile'){
-			return <Profile nama="Ini Mawar Merah"/>;
+			return <Profile nama="Siska Andriani"/>;
 		}
 		else{
 			return(
