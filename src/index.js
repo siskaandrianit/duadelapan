@@ -24,15 +24,10 @@ const items = [
 				},
 				{	color : 'Jambu',
 					title:'Calculator',
-					
-				},
+			},
 				{	color : 'Oranye',
 					title:'Profile',
 					
-				},
-				{
-					color: 'Tomat',
-					title: 'Calcu',
 				},
 				];
 ReactDOM.render(<App items={items} />, document.getElementById('root'));
