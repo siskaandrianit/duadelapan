@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Profile from './profile.js';
 import Calcu from './Calcu.js';
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -12,6 +13,7 @@ class App extends Component {
 			img:'merah2.jpg',
 			title:'Ma-Merah',
 		};
+		
 	}
 	
 	clicked(menu) {
